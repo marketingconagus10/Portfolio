@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketing con Agus | Community Manager</title>
+<meta name="description" content="Portfolio profesional de Agus - Community Manager especialista en gestión de redes sociales, contenido estratégico y crecimiento de marcas digitales.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream:#F7F3EE; --warm-white:#FDFAF6; --charcoal:#1A1A1A; --deep:#0D0D0D;
+    --gold:#C9A84C; --gold-light:#E8C97A; --blush:#E8D5C4; --muted:#8A8178;
+    --accent:#D4614A; --bg-dark:#111010; --card-dark:#1C1B1A;
+    --border:rgba(201,168,76,0.2); --shadow:0 20px 60px rgba(0,0,0,0.12);
+    --shadow-gold:0 8px 32px rgba(201,168,76,0.25);
+    --transition:cubic-bezier(0.25,0.46,0.45,0.94);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--charcoal);overflow-x:hidden;}
+
+  /* NAV */
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 48px;display:flex;justify-content:space-between;align-items:center;background:rgba(247,243,238,0.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:all 0.4s var(--transition);}
+  nav.scrolled{padding:14px 48px;}
+  .nav-logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:900;color:var(--charcoal);letter-spacing:-0.5px;}
+  .nav-logo span{color:var(--gold);}
+  .nav-links{display:flex;gap:40px;list-style:none;}
+  .nav-links a{text-decoration:none;color:var(--muted);font-size:0.85rem;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;transition:color 0.3s;}
+  .nav-links a:hover{color:var(--charcoal);}
+  .nav-cta{background:var(--charcoal)!important;color:var(--cream)!important;padding:10px 24px!important;border-radius:100px!important;transition:background 0.3s,transform 0.2s!important;}
+  .nav-cta:hover{background:var(--gold)!important;transform:translateY(-1px)!important;}
+  .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
+  .hamburger span{width:24px;height:2px;background:var(--charcoal);border-radius:2px;transition:all 0.3s;}
+
+  /* HERO */
+  #hero{min-height:100vh;display:flex;align-items:center;padding:120px 48px 80px;position:relative;overflow:hidden;}
+  .hero-bg{position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse at 65% 50%,rgba(201,168,76,0.08) 0%,transparent 60%),radial-gradient(ellipse at 10% 80%,rgba(232,213,196,0.4) 0%,transparent 50%);}
+  .hero-grain{position:absolute;inset:0;z-index:1;opacity:0.4;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");}
+  .hero-content{position:relative;z-index:2;max-width:600px;}
+  .hero-tag{display:inline-flex;align-items:center;gap:10px;background:var(--blush);color:var(--muted);padding:8px 20px;border-radius:100px;font-size:0.78rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:32px;animation:fadeUp 0.8s var(--transition) both;}
+  .hero-tag::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--gold);display:block;animation:pulse 2s infinite;}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.5;transform:scale(1.4)}}
+  .hero-title{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,5.5vw,5rem);line-height:1.05;font-weight:900;letter-spacing:-2px;margin-bottom:24px;animation:fadeUp 0.8s 0.15s var(--transition) both;}
+  .hero-title em{font-style:italic;color:var(--gold);}
+  .hero-subtitle{font-size:1.05rem;color:var(--muted);line-height:1.7;max-width:460px;margin-bottom:44px;font-weight:300;animation:fadeUp 0.8s 0.3s var(--transition) both;}
+  .hero-actions{display:flex;gap:16px;flex-wrap:wrap;animation:fadeUp 0.8s 0.45s var(--transition) both;}
+  .btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--charcoal);color:var(--cream);padding:16px 36px;border-radius:100px;text-decoration:none;font-weight:500;font-size:0.9rem;border:2px solid transparent;transition:all 0.3s var(--transition);}
+  .btn-primary:hover{background:var(--gold);transform:translateY(-2px);box-shadow:var(--shadow-gold);}
+  .btn-secondary{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--charcoal);padding:16px 36px;border-radius:100px;text-decoration:none;font-weight:500;font-size:0.9rem;border:2px solid var(--charcoal);transition:all 0.3s var(--transition);}
+  .btn-secondary:hover{background:var(--charcoal);color:var(--cream);transform:translateY(-2px);}
+
+  /* HERO RIGHT COLUMN */
+  .hero-right{position:absolute;right:48px;top:50%;transform:translateY(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:20px;animation:fadeLeft 1s 0.5s var(--transition) both;}
+  .hero-photo-wrap{position:relative;width:220px;}
+  .hero-photo-frame{width:220px;height:280px;border-radius:24px;overflow:hidden;background:linear-gradient(135deg,var(--blush),var(--gold-light));box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;font-size:5rem;border:3px solid rgba(201,168,76,0.3);}
+  .hero-photo-frame img{width:100%;height:100%;object-fit:cover;}
+  .hero-photo-ring{position:absolute;inset:-6px;border-radius:30px;border:2px dashed rgba(201,168,76,0.3);pointer-events:none;animation:spin 20s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .hero-stats{display:flex;flex-direction:column;gap:12px;width:220px;}
+  .stat-card{background:var(--warm-white);border:1px solid var(--border);border-radius:12px;padding:16px 20px;text-align:center;box-shadow:var(--shadow);transition:transform 0.3s;}
+  .stat-card:hover{transform:translateY(-4px) rotate(1deg);}
+  .stat-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--gold);line-height:1;}
+  .stat-label{font-size:0.7rem;color:var(--muted);letter-spacing:1px;text-transform:uppercase;margin-top:2px;}
+
+  @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes fadeLeft{from{opacity:0;transform:translate(30px,-50%)}to{opacity:1;transform:translate(0,-50%)}}
+
+  /* SECTIONS */
+  section{padding:100px 48px;}
+  .section-label{display:inline-block;font-size:0.72rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:16px;}
+  .section-title{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:900;letter-spacing:-1px;line-height:1.1;margin-bottom:16px;}
+  .section-sub{color:var(--muted);font-size:1rem;line-height:1.7;max-width:480px;margin-bottom:56px;}
+
+  /* ABOUT */
+  #about{background:var(--warm-white);}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+  .about-visual{position:relative;}
+  .about-img-box{aspect-ratio:4/5;background:linear-gradient(135deg,var(--blush) 0%,var(--gold-light) 100%);border-radius:20px;overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:6rem;box-shadow:var(--shadow);position:relative;}
+  .about-img-box img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .about-badge{position:absolute;bottom:-20px;right:-20px;background:var(--charcoal);color:var(--gold);padding:20px 28px;border-radius:12px;font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;box-shadow:var(--shadow);}
+  .about-badge small{display:block;font-family:'DM Sans',sans-serif;font-size:0.7rem;color:var(--muted);letter-spacing:1px;}
+  .skills-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px;}
+  .skill-tag{background:var(--cream);border:1px solid var(--border);color:var(--charcoal);padding:8px 18px;border-radius:100px;font-size:0.82rem;font-weight:500;transition:all 0.2s;}
+  .skill-tag:hover{background:var(--gold);color:var(--cream);border-color:var(--gold);}
+
+  /* PORTFOLIO */
+  #portfolio{background:var(--cream);}
+  .portfolio-filters{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:48px;}
+  .filter-btn{padding:10px 24px;border-radius:100px;border:1.5px solid var(--border);background:transparent;color:var(--muted);font-size:0.82rem;font-weight:500;cursor:pointer;transition:all 0.2s;font-family:'DM Sans',sans-serif;}
+  .filter-btn.active,.filter-btn:hover{background:var(--charcoal);color:var(--cream);border-color:var(--charcoal);}
+  .portfolio-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:28px;}
+  .client-card{background:var(--warm-white);border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:all 0.4s var(--transition);cursor:pointer;}
+  .client-card:hover{transform:translateY(-8px);box-shadow:var(--shadow);}
+  .card-media{height:240px;background:var(--blush);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+  .card-media img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s var(--transition);}
+  .client-card:hover .card-media img{transform:scale(1.05);}
+  .card-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(26,26,26,0.7),transparent);opacity:0;transition:opacity 0.3s;display:flex;align-items:flex-end;padding:20px;}
+  .client-card:hover .card-overlay{opacity:1;}
+  .card-overlay-links a{background:rgba(255,255,255,0.15);backdrop-filter:blur(10px);color:white;text-decoration:none;padding:8px 16px;border-radius:100px;font-size:0.75rem;font-weight:500;border:1px solid rgba(255,255,255,0.2);margin-right:8px;transition:background 0.2s;}
+  .card-overlay-links a:hover{background:var(--gold);}
+  .card-body{padding:24px;}
+  .card-category{font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:8px;}
+  .card-title{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;margin-bottom:8px;}
+  .card-desc{font-size:0.85rem;color:var(--muted);line-height:1.6;margin-bottom:16px;}
+  .card-tags{display:flex;flex-wrap:wrap;gap:6px;}
+  .card-tag{font-size:0.72rem;color:var(--muted);background:var(--cream);padding:4px 12px;border-radius:100px;}
+  .no-clients{grid-column:1/-1;text-align:center;padding:80px 40px;color:var(--muted);}
+  .no-clients .icon{font-size:3rem;margin-bottom:16px;}
+
+  /* TESTIMONIALS */
+  #testimonials{background:var(--charcoal);color:var(--cream);}
+  #testimonials .section-label{color:var(--gold-light);}
+  #testimonials .section-title{color:var(--cream);}
+  #testimonials .section-sub{color:rgba(255,255,255,0.5);}
+  .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;}
+  .testimonial-card{background:var(--card-dark);border:1px solid rgba(201,168,76,0.15);border-radius:16px;padding:32px;transition:transform 0.3s;}
+  .testimonial-card:hover{transform:translateY(-4px);}
+  .stars{color:var(--gold);font-size:1rem;margin-bottom:16px;}
+  .testimonial-text{font-size:0.95rem;line-height:1.7;color:rgba(255,255,255,0.7);margin-bottom:24px;font-style:italic;}
+  .testimonial-author{display:flex;align-items:center;gap:12px;}
+  .author-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--accent));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.9rem;color:white;flex-shrink:0;}
+  .author-name{font-weight:600;font-size:0.9rem;}
+  .author-role{font-size:0.78rem;color:var(--muted);}
+
+  /* CONTACT */
+  #contact{background:var(--warm-white);}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+  .contact-info{display:flex;flex-direction:column;gap:24px;}
+  .contact-item{display:flex;align-items:center;gap:16px;padding:20px 24px;background:var(--cream);border-radius:12px;border:1px solid var(--border);transition:all 0.3s;}
+  .contact-item:hover{border-color:var(--gold);transform:translateX(4px);}
+  .contact-icon{width:44px;height:44px;border-radius:10px;background:var(--charcoal);color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
+  .contact-detail-label{font-size:0.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px;}
+  .contact-detail-value{font-weight:500;font-size:0.95rem;margin-top:2px;}
+  .contact-detail-value a{color:var(--charcoal);text-decoration:none;}
+  .contact-detail-value a:hover{color:var(--gold);}
+  .contact-form{display:flex;flex-direction:column;gap:16px;}
+  .form-group{display:flex;flex-direction:column;gap:6px;}
+  .form-label{font-size:0.8rem;font-weight:500;color:var(--charcoal);letter-spacing:0.5px;}
+  .form-input,.form-textarea{padding:14px 18px;border:1.5px solid var(--border);border-radius:10px;background:var(--cream);color:var(--charcoal);font-family:'DM Sans',sans-serif;font-size:0.9rem;transition:border-color 0.2s;outline:none;}
+  .form-input:focus,.form-textarea:focus{border-color:var(--gold);}
+  .form-textarea{resize:vertical;min-height:120px;}
+  .form-submit{background:var(--charcoal);color:var(--cream);border:none;padding:16px 36px;border-radius:100px;font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:500;cursor:pointer;transition:all 0.3s;align-self:flex-start;}
+  .form-submit:hover{background:var(--gold);transform:translateY(-2px);}
+
+  /* FOOTER */
+  footer{background:var(--deep);color:var(--cream);padding:60px 48px 32px;}
+  .footer-top{display:flex;justify-content:space-between;align-items:start;flex-wrap:wrap;gap:40px;margin-bottom:40px;}
+  .footer-brand{max-width:280px;}
+  .footer-logo{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;margin-bottom:12px;}
+  .footer-logo span{color:var(--gold);}
+  .footer-desc{color:rgba(255,255,255,0.4);font-size:0.85rem;line-height:1.7;}
+  .footer-social{display:flex;gap:12px;margin-top:24px;}
+  .social-btn{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.9rem;transition:all 0.2s;}
+  .social-btn:hover{background:var(--gold);border-color:var(--gold);color:var(--deep);}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+  .footer-copy{color:rgba(255,255,255,0.3);font-size:0.8rem;}
+
+  /* ADMIN */
+  .admin-overlay{position:fixed;inset:0;z-index:1000;background:rgba(13,13,13,0.95);backdrop-filter:blur(20px);display:none;align-items:center;justify-content:center;}
+  .admin-overlay.open{display:flex;}
+  .login-box{background:var(--card-dark);border:1px solid rgba(201,168,76,0.2);border-radius:20px;padding:56px 48px;width:100%;max-width:420px;text-align:center;}
+  .login-logo{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;color:var(--cream);margin-bottom:8px;}
+  .login-logo span{color:var(--gold);}
+  .login-sub{color:var(--muted);font-size:0.85rem;margin-bottom:40px;}
+  .login-field{width:100%;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.04);border:1.5px solid rgba(255,255,255,0.08);border-radius:10px;color:var(--cream);font-family:'DM Sans',sans-serif;font-size:0.9rem;outline:none;transition:border-color 0.2s;}
+  .login-field:focus{border-color:var(--gold);}
+  .login-btn{width:100%;padding:15px;background:var(--gold);color:var(--deep);border:none;border-radius:100px;font-family:'DM Sans',sans-serif;font-size:0.95rem;font-weight:600;cursor:pointer;margin-top:8px;transition:all 0.3s;}
+  .login-btn:hover{background:var(--gold-light);transform:translateY(-2px);}
+  .login-error{color:var(--accent);font-size:0.82rem;margin-top:12px;display:none;}
+
+  .admin-dashboard{position:fixed;inset:0;z-index:999;background:var(--bg-dark);color:var(--cream);display:none;flex-direction:column;overflow:hidden;}
+  .admin-dashboard.open{display:flex;}
+  .admin-topbar{background:var(--card-dark);border-bottom:1px solid rgba(201,168,76,0.15);padding:16px 32px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;}
+  .admin-topbar-logo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--gold);}
+  .admin-topbar-actions{display:flex;gap:12px;align-items:center;}
+  .admin-close-btn{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:var(--muted);padding:8px 20px;border-radius:100px;cursor:pointer;font-size:0.82rem;font-family:'DM Sans',sans-serif;transition:all 0.2s;}
+  .admin-close-btn:hover{background:var(--accent);color:white;border-color:var(--accent);}
+  .admin-layout{display:flex;flex:1;overflow:hidden;}
+  .admin-sidebar{width:230px;background:var(--card-dark);border-right:1px solid rgba(255,255,255,0.05);padding:24px 16px;flex-shrink:0;display:flex;flex-direction:column;gap:4px;overflow-y:auto;}
+  .sidebar-item{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:10px;cursor:pointer;font-size:0.85rem;color:var(--muted);transition:all 0.2s;border:none;background:none;font-family:'DM Sans',sans-serif;width:100%;text-align:left;}
+  .sidebar-item:hover,.sidebar-item.active{background:rgba(201,168,76,0.1);color:var(--gold-light);}
+  .sidebar-item.active{font-weight:500;}
+  .sidebar-divider{height:1px;background:rgba(255,255,255,0.06);margin:8px 0;}
+  .sidebar-section-label{font-size:0.68rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.2);padding:8px 14px 4px;}
+  .admin-main{flex:1;overflow-y:auto;padding:32px;}
+  .admin-panel{display:none;}
+  .admin-panel.active{display:block;}
+  .admin-panel>h2{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;margin-bottom:8px;}
+  .admin-panel>p{color:var(--muted);font-size:0.9rem;margin-bottom:32px;}
+
+  .admin-form-card{background:var(--card-dark);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:28px;margin-bottom:24px;}
+  .admin-form-card h3{font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:20px;color:var(--cream);}
+  .admin-field-group{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+  .admin-field-group.full{grid-template-columns:1fr;}
+  .admin-label{font-size:0.78rem;color:var(--muted);margin-bottom:6px;display:block;letter-spacing:0.5px;}
+  .admin-input,.admin-textarea,.admin-select{width:100%;padding:12px 16px;background:rgba(255,255,255,0.04);border:1.5px solid rgba(255,255,255,0.08);border-radius:8px;color:var(--cream);font-family:'DM Sans',sans-serif;font-size:0.85rem;outline:none;transition:border-color 0.2s;}
+  .admin-input:focus,.admin-textarea:focus,.admin-select:focus{border-color:var(--gold);}
+  .admin-textarea{resize:vertical;min-height:90px;}
+  .admin-select option{background:var(--card-dark);}
+  .admin-btn{padding:12px 28px;border-radius:100px;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:500;cursor:pointer;transition:all 0.2s;border:none;}
+  .admin-btn-primary{background:var(--gold);color:var(--deep);}
+  .admin-btn-primary:hover{background:var(--gold-light);transform:translateY(-1px);}
+  .admin-btn-danger{background:var(--accent);color:white;}
+  .admin-btn-danger:hover{opacity:0.85;}
+  .admin-btn-ghost{background:rgba(255,255,255,0.05);color:var(--muted);border:1px solid rgba(255,255,255,0.1);}
+  .admin-btn-ghost:hover{background:rgba(255,255,255,0.1);color:var(--cream);}
+  .admin-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;}
+
+  /* PHOTO UPLOAD */
+  .photo-upload-row{display:flex;gap:24px;align-items:flex-start;}
+  .photo-preview-rect{width:150px;height:190px;border-radius:16px;flex-shrink:0;background:linear-gradient(135deg,var(--blush),var(--gold-light));overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:3rem;border:3px solid rgba(201,168,76,0.3);position:relative;cursor:pointer;}
+  .photo-preview-rect img{width:100%;height:100%;object-fit:cover;}
+  .photo-overlay{position:absolute;inset:0;background:rgba(0,0,0,0.55);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.2s;border-radius:inherit;font-size:1.5rem;color:white;}
+  .photo-preview-rect:hover .photo-overlay{opacity:1;}
+  .photo-upload-info{flex:1;}
+  .photo-upload-info p{color:var(--muted);font-size:0.82rem;line-height:1.6;margin-bottom:12px;}
+  .photo-hidden-input{display:none;}
+
+  /* SKILLS EDITOR */
+  .skills-editor{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;min-height:36px;}
+  .skill-edit-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.25);color:var(--gold-light);padding:6px 14px;border-radius:100px;font-size:0.8rem;}
+  .skill-edit-tag button{background:none;border:none;color:var(--accent);cursor:pointer;font-size:0.8rem;line-height:1;padding:0;}
+  .skill-add-row{display:flex;gap:8px;}
+  .skill-add-input{flex:1;padding:10px 14px;background:rgba(255,255,255,0.04);border:1.5px solid rgba(255,255,255,0.08);border-radius:8px;color:var(--cream);font-family:'DM Sans',sans-serif;font-size:0.85rem;outline:none;}
+  .skill-add-input:focus{border-color:var(--gold);}
+  .skill-add-btn{padding:10px 20px;background:var(--gold);color:var(--deep);border:none;border-radius:8px;cursor:pointer;font-weight:600;transition:background 0.2s;}
+  .skill-add-btn:hover{background:var(--gold-light);}
+
+  /* STATS EDITOR ROW */
+  .stat-row{display:grid;grid-template-columns:1fr 2fr auto auto;gap:10px;align-items:end;margin-bottom:10px;background:rgba(255,255,255,0.03);padding:14px;border-radius:8px;}
+
+  /* CLIENTS LIST */
+  .clients-admin-list{display:flex;flex-direction:column;gap:16px;}
+  .client-admin-item{background:var(--card-dark);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+  .client-admin-thumb{width:52px;height:52px;border-radius:10px;flex-shrink:0;overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:1.3rem;}
+  .client-admin-thumb img{width:100%;height:100%;object-fit:cover;}
+  .client-admin-info{flex:1;min-width:200px;}
+  .client-admin-name{font-weight:600;font-size:0.95rem;margin-bottom:4px;}
+  .client-admin-meta{font-size:0.78rem;color:var(--muted);}
+  .client-admin-actions{display:flex;gap:8px;}
+
+  /* IMG UPLOAD */
+  .img-upload-area{border:2px dashed rgba(201,168,76,0.3);border-radius:12px;padding:32px;text-align:center;cursor:pointer;transition:all 0.2s;position:relative;}
+  .img-upload-area:hover{border-color:var(--gold);background:rgba(201,168,76,0.04);}
+  .img-upload-area input[type="file"]{position:absolute;inset:0;opacity:0;cursor:pointer;}
+  .img-upload-icon{font-size:2rem;margin-bottom:8px;}
+  .img-upload-text{font-size:0.85rem;color:var(--muted);}
+  .img-preview-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:10px;margin-top:16px;}
+  .img-preview{aspect-ratio:1;border-radius:8px;overflow:hidden;position:relative;border:1px solid rgba(255,255,255,0.08);}
+  .img-preview img{width:100%;height:100%;object-fit:cover;}
+  .img-preview-del{position:absolute;top:4px;right:4px;background:var(--accent);color:white;border:none;width:22px;height:22px;border-radius:50%;cursor:pointer;font-size:0.7rem;display:flex;align-items:center;justify-content:center;}
+
+  /* LIVE BADGE */
+  .live-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(168,216,168,0.12);color:#6fcf97;border:1px solid rgba(168,216,168,0.25);padding:4px 12px;border-radius:100px;font-size:0.72rem;font-weight:500;}
+  .live-badge::before{content:'';width:6px;height:6px;border-radius:50%;background:#6fcf97;display:block;animation:pulse 2s infinite;}
+
+  /* TOAST */
+  .toast{position:fixed;bottom:32px;right:32px;z-index:9999;background:var(--charcoal);color:var(--cream);padding:14px 24px;border-radius:12px;font-size:0.88rem;font-weight:500;border-left:3px solid var(--gold);box-shadow:0 8px 32px rgba(0,0,0,0.3);transform:translateY(80px);opacity:0;transition:all 0.4s var(--transition);pointer-events:none;}
+  .toast.show{transform:translateY(0);opacity:1;}
+  .toast.error{border-color:var(--accent);}
+
+  /* FAB */
+  .admin-fab{position:fixed;bottom:32px;left:32px;z-index:500;background:var(--charcoal);color:var(--gold);border:none;width:52px;height:52px;border-radius:50%;font-size:1.2rem;cursor:pointer;box-shadow:0 4px 20px rgba(0,0,0,0.3);transition:all 0.3s;display:flex;align-items:center;justify-content:center;}
+  .admin-fab:hover{background:var(--gold);color:var(--deep);transform:scale(1.1);}
+
+  /* REVEAL */
+  .reveal{opacity:0;transform:translateY(32px);transition:all 0.7s var(--transition);}
+  .reveal.visible{opacity:1;transform:translateY(0);}
+
+  /* RESPONSIVE */
+  @media(max-width:900px){
+    nav{padding:16px 24px;}
+    .nav-links{display:none;}
+    .hamburger{display:flex;}
+    nav.menu-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--cream);padding:24px;border-bottom:1px solid var(--border);gap:20px;}
+    #hero{padding:100px 24px 60px;flex-direction:column;}
+    .hero-right{position:static;transform:none;animation:none;margin-top:40px;flex-direction:row;flex-wrap:wrap;justify-content:center;width:100%;}
+    .hero-photo-wrap{order:-1;}
+    .hero-stats{flex-direction:row;flex-wrap:wrap;width:auto;}
+    .stat-card{min-width:110px;}
+    .about-grid,.contact-grid{grid-template-columns:1fr;gap:40px;}
+    section{padding:70px 24px;}
+    .admin-field-group{grid-template-columns:1fr;}
+    .admin-sidebar{width:60px;padding:16px 8px;}
+    .sidebar-item span.label,.sidebar-section-label{display:none;}
+    .sidebar-item{justify-content:center;}
+    .admin-main{padding:20px;}
+    footer{padding:40px 24px 24px;}
+    .photo-upload-row{flex-direction:column;}
+    .stat-row{grid-template-columns:1fr 1fr;grid-template-rows:auto auto;}
+  }
+  @media(max-width:600px){
+    .portfolio-grid{grid-template-columns:1fr;}
+    .testimonials-grid{grid-template-columns:1fr;}
+    .hero-title{font-size:2.5rem;}
+    .login-box{padding:36px 24px;margin:16px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-logo">Marketing<span>con Agus</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">Sobre mí</a></li>
+    <li><a href="#portfolio">Trabajos</a></li>
+    <li><a href="#testimonials">Clientes</a></li>
+    <li><a href="#contact" class="nav-cta">Contacto</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div><div class="hero-grain"></div>
+  <div class="hero-content">
+    <div class="hero-tag" id="heroTag">Community Manager &amp; Estratega Digital</div>
+    <h1 class="hero-title" id="heroTitle">Crecé en<br>redes con <em>estilo</em></h1>
+    <p class="hero-subtitle" id="heroSubtitle">Transformo marcas en comunidades. Estrategia, contenido y gestión de redes sociales que conectan de verdad con tu audiencia.</p>
+    <div class="hero-actions">
+      <a href="#portfolio" class="btn-primary">Ver mis trabajos →</a>
+      <a href="#contact" class="btn-secondary">Trabajemos juntos</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-frame" id="heroPhotoFrame">
+        <span id="heroPhotoPlaceholder">✨</span>
+        <img id="heroPhotoImg" src="" alt="Agus" style="display:none">
+      </div>
+      <div class="hero-photo-ring"></div>
+    </div>
+    <div class="hero-stats" id="heroStatsEl"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-visual reveal">
+      <div class="about-img-box" id="aboutImgBox">
+        <span id="aboutPhotoPlaceholder" style="position:relative;z-index:1">✨</span>
+        <img id="aboutPhotoImg" src="" alt="" style="display:none">
+      </div>
+      <div class="about-badge"><span id="aboutYears">3+</span><small id="aboutYearsLabel">años de experiencia</small></div>
+    </div>
+    <div class="reveal">
+      <span class="section-label">Sobre mí</span>
+      <h2 class="section-title" id="aboutTitle">Soy Agus, tu aliada digital</h2>
+      <p class="section-sub" id="aboutBio">Me especializo en convertir negocios comunes en marcas memorables a través de estrategias de contenido auténticas y gestión de comunidades que generan resultados reales.</p>
+      <div class="skills-list" id="skillsDisplay"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <span class="section-label reveal">Portfolio</span>
+  <h2 class="section-title reveal">Mis trabajos</h2>
+  <p class="section-sub reveal">Proyectos reales, resultados comprobables. Cada cliente es una historia de crecimiento.</p>
+  <div class="portfolio-filters reveal" id="filterBar"><button class="filter-btn active" data-filter="all">Todos</button></div>
+  <div class="portfolio-grid" id="portfolioGrid">
+    <div class="no-clients"><div class="icon">🎨</div><p>Aún no hay clientes. <strong>Iniciá sesión como Admin</strong> para agregar tus trabajos.</p></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <span class="section-label">Testimonios</span>
+  <h2 class="section-title reveal" style="color:var(--cream)">Lo que dicen mis clientes</h2>
+  <p class="section-sub reveal">Porque los mejores resultados los cuentan ellos.</p>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal"><div class="stars">★★★★★</div><p class="testimonial-text">"Agus transformó completamente nuestra presencia en redes. En 3 meses duplicamos seguidores y las ventas crecieron un 40%."</p><div class="testimonial-author"><div class="author-avatar">ML</div><div><div class="author-name">María López</div><div class="author-role">Dueña — Boutique ML</div></div></div></div>
+    <div class="testimonial-card reveal"><div class="stars">★★★★★</div><p class="testimonial-text">"El contenido que crea Agus es exactamente lo que nuestra marca necesitaba. Profesional, creativa y siempre cumple los plazos."</p><div class="testimonial-author"><div class="author-avatar">CR</div><div><div class="author-name">Carlos Ríos</div><div class="author-role">Director — Ríos Inmobiliaria</div></div></div></div>
+    <div class="testimonial-card reveal"><div class="stars">★★★★★</div><p class="testimonial-text">"Trabajar con Agus es una experiencia increíble. Entiende el negocio, la audiencia, y sabe cómo comunicar de manera auténtica."</p><div class="testimonial-author"><div class="author-avatar">SP</div><div><div class="author-name">Sofía Pérez</div><div class="author-role">CEO — Studio SP</div></div></div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <span class="section-label reveal">Contacto</span>
+  <h2 class="section-title reveal">Trabajemos juntos</h2>
+  <p class="section-sub reveal">¿Listo para hacer crecer tu marca? Escribime.</p>
+  <div class="contact-grid">
+    <div class="contact-info" id="contactInfoDisplay"></div>
+    <div>
+      <form class="contact-form" onsubmit="handleContactForm(event)">
+        <div class="form-group"><label class="form-label">Tu nombre</label><input type="text" class="form-input" placeholder="María García" required></div>
+        <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" placeholder="mail@ejemplo.com" required></div>
+        <div class="form-group"><label class="form-label">Mensaje</label><textarea class="form-textarea" placeholder="Contame sobre tu proyecto..." required></textarea></div>
+        <button type="submit" class="form-submit">Enviar mensaje →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">Marketing<span>con Agus</span></div>
+      <p class="footer-desc">Community Manager especialista en hacer crecer marcas con estrategia y autenticidad.</p>
+      <div class="footer-social" id="footerSocial"></div>
+    </div>
+    <div>
+      <p style="color:var(--muted);font-size:0.8rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px">Navegación</p>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <a href="#about" style="color:rgba(255,255,255,0.4);text-decoration:none;font-size:0.88rem">Sobre mí</a>
+        <a href="#portfolio" style="color:rgba(255,255,255,0.4);text-decoration:none;font-size:0.88rem">Portfolio</a>
+        <a href="#testimonials" style="color:rgba(255,255,255,0.4);text-decoration:none;font-size:0.88rem">Testimonios</a>
+        <a href="#contact" style="color:rgba(255,255,255,0.4);text-decoration:none;font-size:0.88rem">Contacto</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2025 Marketing con Agus. Todos los derechos reservados.</p>
+    <p class="footer-copy">Diseñado con 💛</p>
+  </div>
+</footer>
+
+<button class="admin-fab" onclick="openAdmin()" title="Panel Admin">⚙</button>
+
+<!-- LOGIN -->
+<div class="admin-overlay" id="adminOverlay">
+  <div class="login-box">
+    <div class="login-logo">Marketing<span>con Agus</span></div>
+    <p class="login-sub">Panel de Administración</p>
+    <input type="text" class="login-field" id="loginUser" placeholder="Usuario" autocomplete="username">
+    <input type="password" class="login-field" id="loginPass" placeholder="Contraseña" autocomplete="current-password" onkeydown="if(event.key==='Enter')doLogin()">
+    <button class="login-btn" onclick="doLogin()">Ingresar</button>
+    <p class="login-error" id="loginError">❌ Credenciales incorrectas</p>
+    <button onclick="closeAdmin()" style="margin-top:20px;background:none;border:none;color:var(--muted);cursor:pointer;font-family:'DM Sans',sans-serif;font-size:0.82rem">Cancelar</button>
+  </div>
+</div>
+
+<!-- DASHBOARD -->
+<div class="admin-dashboard" id="adminDashboard">
+  <div class="admin-topbar">
+    <div class="admin-topbar-logo">⚙ Admin — Marketing con Agus</div>
+    <div class="admin-topbar-actions">
+      <span class="live-badge">En vivo</span>
+      <span style="color:var(--muted);font-size:0.82rem">Bienvenida, Agus 👋</span>
+      <button class="admin-close-btn" onclick="logoutAdmin()">Cerrar sesión</button>
+    </div>
+  </div>
+  <div class="admin-layout">
+    <div class="admin-sidebar">
+      <div class="sidebar-section-label">Página</div>
+      <button class="sidebar-item active" onclick="showPanel('hero')" data-panel="hero">🏠 <span class="label">Hero / Inicio</span></button>
+      <button class="sidebar-item" onclick="showPanel('aboutAdmin')" data-panel="aboutAdmin">👤 <span class="label">Sobre mí</span></button>
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-section-label">Trabajos</div>
+      <button class="sidebar-item" onclick="showPanel('clients')" data-panel="clients">🎨 <span class="label">Clientes</span></button>
+      <button class="sidebar-item" onclick="showPanel('addClient')" data-panel="addClient">➕ <span class="label">Nuevo cliente</span></button>
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-section-label">Configuración</div>
+      <button class="sidebar-item" onclick="showPanel('contact')" data-panel="contact">📞 <span class="label">Contacto</span></button>
+      <button class="sidebar-item" onclick="showPanel('stats')" data-panel="stats">📊 <span class="label">Stats</span></button>
+    </div>
+
+    <div class="admin-main">
+
+      <!-- ══ HERO PANEL ══ -->
+      <div class="admin-panel active" id="panel-hero">
+        <h2>🏠 Editar Página de Inicio</h2>
+        <p>Personalizá tu foto principal, los textos del hero y las tarjetas de estadísticas.</p>
+        <form onsubmit="saveHero(event)">
+
+          <div class="admin-form-card">
+            <h3>📸 Tu foto principal</h3>
+            <div class="photo-upload-row">
+              <div class="photo-preview-rect" onclick="document.getElementById('heroPhotoInput').click()">
+                <img id="adminHeroPreviewImg" src="" style="display:none">
+                <span id="adminHeroPreviewPh">✨</span>
+                <div class="photo-overlay">📷 Cambiar foto</div>
+              </div>
+              <div class="photo-upload-info">
+                <p>Esta foto aparece en el panel derecho del hero. Usá una imagen vertical (portrait) donde se te vea bien. Formatos: JPG, PNG o WEBP.</p>
+                <div style="display:flex;gap:8px;flex-wrap:wrap">
+                  <button type="button" class="admin-btn admin-btn-ghost" onclick="document.getElementById('heroPhotoInput').click()">📁 Subir foto</button>
+                  <button type="button" class="admin-btn admin-btn-danger" onclick="clearHeroPhoto()">✕ Quitar</button>
+                </div>
+              </div>
+            </div>
+            <input type="file" id="heroPhotoInput" class="photo-hidden-input" accept="image/*" onchange="onHeroPhotoChange(event)">
+          </div>
+
+          <div class="admin-form-card">
+            <h3>✍️ Textos</h3>
+            <div class="admin-field-group full">
+              <div><label class="admin-label">Tag / Especialidad (texto pequeño con el punto dorado)</label><input class="admin-input" id="f_heroTag" placeholder="Community Manager & Estratega Digital"></div>
+            </div>
+            <div class="admin-field-group full">
+              <div>
+                <label class="admin-label">Título principal — rodeá con [em] y [/em] para el texto dorado en cursiva (podés usar salto de línea con Enter)</label>
+                <textarea class="admin-textarea" id="f_heroTitle" style="min-height:72px" placeholder="Crecé en&#10;redes con [em]estilo[/em]"></textarea>
+              </div>
+            </div>
+            <div class="admin-field-group full">
+              <div><label class="admin-label">Subtítulo / Descripción</label><textarea class="admin-textarea" id="f_heroSubtitle" style="min-height:72px"></textarea></div>
+            </div>
+          </div>
+
+          <div class="admin-form-card">
+            <h3>📊 Tarjetas de estadísticas</h3>
+            <p style="color:var(--muted);font-size:0.82rem;margin-bottom:16px">Podés tener hasta 4 tarjetas. "Auto" cuenta los clientes automáticamente.</p>
+            <div id="statsRows"></div>
+            <button type="button" class="admin-btn admin-btn-ghost" onclick="addStatRow()" style="margin-top:4px">+ Agregar tarjeta</button>
+          </div>
+
+          <div class="admin-actions">
+            <button type="submit" class="admin-btn admin-btn-primary">💾 Guardar cambios en Inicio</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- ══ ABOUT PANEL ══ -->
+      <div class="admin-panel" id="panel-aboutAdmin">
+        <h2>👤 Editar "Sobre mí"</h2>
+        <p>Actualizá tu foto, textos y habilidades de la sección Sobre mí.</p>
+        <form onsubmit="saveAbout(event)">
+
+          <div class="admin-form-card">
+            <h3>📸 Foto en "Sobre mí"</h3>
+            <div class="photo-upload-row">
+              <div class="photo-preview-rect" onclick="document.getElementById('aboutPhotoInput').click()">
+                <img id="adminAboutPreviewImg" src="" style="display:none">
+                <span id="adminAboutPreviewPh">✨</span>
+                <div class="photo-overlay">📷 Cambiar foto</div>
+              </div>
+              <div class="photo-upload-info">
+                <p>Foto que aparece en la sección "Sobre mí". Recomendamos imagen vertical con buena iluminación.</p>
+                <div style="display:flex;gap:8px;flex-wrap:wrap">
+                  <button type="button" class="admin-btn admin-btn-ghost" onclick="document.getElementById('aboutPhotoInput').click()">📁 Subir foto</button>
+                  <button type="button" class="admin-btn admin-btn-danger" onclick="clearAboutPhoto()">✕ Quitar</button>
+                </div>
+              </div>
+            </div>
+            <input type="file" id="aboutPhotoInput" class="photo-hidden-input" accept="image/*" onchange="onAboutPhotoChange(event)">
+          </div>
+
+          <div class="admin-form-card">
+            <h3>✍️ Textos</h3>
+            <div class="admin-field-group">
+              <div><label class="admin-label">Título</label><input class="admin-input" id="f_aboutTitle" placeholder="Soy Agus, tu aliada digital"></div>
+              <div><label class="admin-label">Badge — número (ej: 3+)</label><input class="admin-input" id="f_aboutYears" placeholder="3+"></div>
+            </div>
+            <div class="admin-field-group full">
+              <div><label class="admin-label">Texto del badge (ej: años de experiencia)</label><input class="admin-input" id="f_aboutYearsLabel" placeholder="años de experiencia"></div>
+            </div>
+            <div class="admin-field-group full">
+              <div><label class="admin-label">Biografía</label><textarea class="admin-textarea" id="f_aboutBio"></textarea></div>
+            </div>
+          </div>
+
+          <div class="admin-form-card">
+            <h3>🏷️ Habilidades</h3>
+            <div class="skills-editor" id="skillsEditor"></div>
+            <div class="skill-add-row">
+              <input type="text" class="skill-add-input" id="newSkillInput" placeholder="Ej: Pinterest" onkeydown="if(event.key==='Enter'){event.preventDefault();addSkill()}">
+              <button type="button" class="skill-add-btn" onclick="addSkill()">+ Agregar</button>
+            </div>
+          </div>
+
+          <div class="admin-actions">
+            <button type="submit" class="admin-btn admin-btn-primary">💾 Guardar cambios en Sobre mí</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- ══ CLIENTS PANEL ══ -->
+      <div class="admin-panel" id="panel-clients">
+        <h2>Mis Clientes</h2>
+        <p>Gestioná todos tus clientes y trabajos.</p>
+        <div class="clients-admin-list" id="clientsAdminList"></div>
+      </div>
+
+      <!-- ══ ADD CLIENT PANEL ══ -->
+      <div class="admin-panel" id="panel-addClient">
+        <h2 id="addClientTitle">Agregar Cliente</h2>
+        <p>Completá la info del cliente y subí las imágenes de tu trabajo.</p>
+        <form onsubmit="saveClient(event)">
+          <div class="admin-form-card">
+            <h3>📋 Información básica</h3>
+            <input type="hidden" id="editClientId">
+            <div class="admin-field-group">
+              <div><label class="admin-label">Nombre del cliente *</label><input type="text" class="admin-input" id="clientName" placeholder="Ej: Boutique María" required></div>
+              <div><label class="admin-label">Categoría</label>
+                <select class="admin-select" id="clientCategory">
+                  <option>Moda &amp; Lifestyle</option><option>Gastronomía</option><option>Inmobiliaria</option><option>Salud &amp; Bienestar</option><option>Tecnología</option><option>Servicios</option><option>Otro</option>
+                </select>
+              </div>
+            </div>
+            <div class="admin-field-group full"><div><label class="admin-label">Descripción del trabajo</label><textarea class="admin-textarea" id="clientDesc" placeholder="¿Qué estrategia implementaste? ¿Qué resultados lograste?"></textarea></div></div>
+            <div class="admin-field-group">
+              <div><label class="admin-label">Link Instagram / Red principal</label><input type="url" class="admin-input" id="clientLink1" placeholder="https://instagram.com/..."></div>
+              <div><label class="admin-label">Link secundario (opcional)</label><input type="url" class="admin-input" id="clientLink2" placeholder="https://..."></div>
+            </div>
+            <div class="admin-field-group">
+              <div><label class="admin-label">Tags (separados por coma)</label><input type="text" class="admin-input" id="clientTags" placeholder="Instagram, Reels, Contenido"></div>
+              <div><label class="admin-label">Color de marca</label><input type="color" class="admin-input" id="clientColor" value="#C9A84C" style="height:44px;padding:4px 8px;cursor:pointer"></div>
+            </div>
+          </div>
+          <div class="admin-form-card">
+            <h3>🖼 Imágenes del trabajo</h3>
+            <div class="img-upload-area"><input type="file" id="clientImages" accept="image/*" multiple onchange="previewClientImages(event)"><div class="img-upload-icon">📸</div><div class="img-upload-text">Hacé click o arrastrá imágenes aquí<br><small>PNG, JPG, WEBP — múltiples imágenes</small></div></div>
+            <div class="img-preview-grid" id="imgPreviewGrid"></div>
+          </div>
+          <div class="admin-actions">
+            <button type="submit" class="admin-btn admin-btn-primary">💾 Guardar cliente</button>
+            <button type="button" class="admin-btn admin-btn-ghost" onclick="resetClientForm()">✕ Cancelar</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- ══ CONTACT PANEL ══ -->
+      <div class="admin-panel" id="panel-contact">
+        <h2>Información de Contacto</h2>
+        <p>Editá tu info de contacto pública. Se actualiza al instante en el sitio.</p>
+        <form onsubmit="saveContact(event)">
+          <div class="admin-form-card">
+            <h3>📞 Datos de contacto</h3>
+            <div class="admin-field-group">
+              <div><label class="admin-label">Email</label><input type="email" class="admin-input" id="contactEmail" placeholder="agus@marketing.com"></div>
+              <div><label class="admin-label">Teléfono / WhatsApp</label><input type="text" class="admin-input" id="contactPhone" placeholder="+54 9 381 000 0000"></div>
+            </div>
+            <div class="admin-field-group">
+              <div><label class="admin-label">Ciudad / Ubicación</label><input type="text" class="admin-input" id="contactCity" placeholder="Santiago del Estero, Argentina"></div>
+              <div><label class="admin-label">Horario de atención</label><input type="text" class="admin-input" id="contactHours" placeholder="Lun–Vie, 9–18hs"></div>
+            </div>
+          </div>
+          <div class="admin-form-card">
+            <h3>🔗 Redes sociales</h3>
+            <div class="admin-field-group">
+              <div><label class="admin-label">Instagram</label><input type="url" class="admin-input" id="socialIG" placeholder="https://instagram.com/..."></div>
+              <div><label class="admin-label">TikTok</label><input type="url" class="admin-input" id="socialTT" placeholder="https://tiktok.com/@..."></div>
+            </div>
+            <div class="admin-field-group">
+              <div><label class="admin-label">LinkedIn</label><input type="url" class="admin-input" id="socialLI" placeholder="https://linkedin.com/in/..."></div>
+              <div><label class="admin-label">WhatsApp (número sin espacios: 549381...)</label><input type="text" class="admin-input" id="socialWA" placeholder="5493810000000"></div>
+            </div>
+          </div>
+          <div class="admin-actions"><button type="submit" class="admin-btn admin-btn-primary">💾 Guardar cambios</button></div>
+        </form>
+      </div>
+
+      <!-- ══ STATS PANEL ══ -->
+      <div class="admin-panel" id="panel-stats">
+        <h2>Estadísticas</h2>
+        <p>Resumen de tu portfolio.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px">
+          <div class="admin-form-card" style="text-align:center"><div style="font-size:2.5rem;font-family:'Playfair Display',serif;color:var(--gold)" id="statTotalClients">0</div><div style="color:var(--muted);font-size:0.8rem;margin-top:4px">Clientes totales</div></div>
+          <div class="admin-form-card" style="text-align:center"><div style="font-size:2.5rem;font-family:'Playfair Display',serif;color:var(--gold)" id="statTotalImgs">0</div><div style="color:var(--muted);font-size:0.8rem;margin-top:4px">Imágenes subidas</div></div>
+          <div class="admin-form-card" style="text-align:center"><div style="font-size:2.5rem;font-family:'Playfair Display',serif;color:var(--gold)" id="statCategories">0</div><div style="color:var(--muted);font-size:0.8rem;margin-top:4px">Categorías</div></div>
+        </div>
+        <div class="admin-form-card" style="margin-top:16px"><h3>⚠️ Zona peligrosa</h3><p style="color:var(--muted);font-size:0.85rem;margin-bottom:16px">Estas acciones son irreversibles.</p><button class="admin-btn admin-btn-danger" onclick="clearAllData()">🗑 Borrar todos los datos</button></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ── STORAGE ──
+const DB={get:k=>{try{return JSON.parse(localStorage.getItem(k))}catch{return null}},set:(k,v)=>localStorage.setItem(k,JSON.stringify(v)),del:k=>localStorage.removeItem(k)};
+
+const DEF_HERO={heroPhoto:'',heroTag:'Community Manager & Estratega Digital',heroTitle:'Crecé en\nredes con [em]estilo[/em]',heroSubtitle:'Transformo marcas en comunidades. Estrategia, contenido y gestión de redes sociales que conectan de verdad con tu audiencia.',stats:[{num:'',label:'Clientes activos',auto:true},{num:'+50k',label:'Seguidores generados',auto:false},{num:'98%',label:'Satisfacción',auto:false}]};
+const DEF_ABOUT={photo:'',title:'Soy Agus, tu aliada digital',bio:'Me especializo en convertir negocios comunes en marcas memorables a través de estrategias de contenido auténticas y gestión de comunidades que generan resultados reales.',years:'3+',yearsLabel:'años de experiencia',skills:['Instagram','TikTok','Facebook Ads','Estrategia de contenido','Diseño Canva','Copywriting','Análisis de métricas','Reels & Stories','Email Marketing']};
+const DEF_CONTACT={email:'agus@marketingconagus.com',phone:'+54 9 381 000 0000',city:'Santiago del Estero, Argentina',hours:'Lun–Vie, 9–18hs',ig:'',tt:'',li:'',wa:''};
+
+const getHero=()=>({...DEF_HERO,...(DB.get('hp_hero')||{})});
+const getAboutData=()=>({...DEF_ABOUT,...(DB.get('hp_about')||{})});
+const getClients=()=>DB.get('mcag_clients')||[];
+const getContact=()=>({...DEF_CONTACT,...(DB.get('mcag_contact')||{})});
+
+// ── NAV ──
+window.addEventListener('scroll',()=>document.getElementById('mainNav').classList.toggle('scrolled',scrollY>40));
+function toggleMenu(){document.getElementById('mainNav').classList.toggle('menu-open');}
+
+// ── REVEAL ──
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}}),{threshold:0.12});
+function watchReveals(){document.querySelectorAll('.reveal:not(.visible)').forEach(el=>observer.observe(el));}
+
+// ── RENDER HERO ──
+function renderHero(){
+  const h=getHero();
+  // Tag
+  document.getElementById('heroTag').textContent=h.heroTag;
+  // Title: convert [em]...[/em] and \n to HTML
+  document.getElementById('heroTitle').innerHTML=h.heroTitle.replace(/\n/g,'<br>').replace(/\[em\](.*?)\[\/em\]/g,'<em>$1</em>');
+  // Subtitle
+  document.getElementById('heroSubtitle').textContent=h.heroSubtitle;
+  // Photo
+  const img=document.getElementById('heroPhotoImg');
+  const ph=document.getElementById('heroPhotoPlaceholder');
+  if(h.heroPhoto){img.src=h.heroPhoto;img.style.display='block';ph.style.display='none';}
+  else{img.style.display='none';ph.style.display='block';}
+  // Stats
+  const clients=getClients();
+  document.getElementById('heroStatsEl').innerHTML=h.stats.map(s=>`<div class="stat-card"><div class="stat-num">${s.auto?clients.length:s.num}</div><div class="stat-label">${s.label}</div></div>`).join('');
+}
+
+// ── RENDER ABOUT ──
+function renderAbout(){
+  const a=getAboutData();
+  document.getElementById('aboutTitle').textContent=a.title;
+  document.getElementById('aboutBio').textContent=a.bio;
+  document.getElementById('aboutYears').textContent=a.years;
+  document.getElementById('aboutYearsLabel').textContent=a.yearsLabel;
+  const img=document.getElementById('aboutPhotoImg');
+  const ph=document.getElementById('aboutPhotoPlaceholder');
+  if(a.photo){img.src=a.photo;img.style.display='block';ph.style.display='none';}
+  else{img.style.display='none';ph.style.display='block';}
+  document.getElementById('skillsDisplay').innerHTML=(a.skills||[]).map(s=>`<span class="skill-tag">${s}</span>`).join('');
+}
+
+// ── RENDER PORTFOLIO ──
+function renderPortfolio(){
+  const clients=getClients();
+  const grid=document.getElementById('portfolioGrid');
+  const fb=document.getElementById('filterBar');
+  renderHero(); // update auto stat
+  if(!clients.length){grid.innerHTML='<div class="no-clients"><div class="icon">🎨</div><p>Aún no hay clientes. <strong>Iniciá sesión como Admin</strong> para agregar tus trabajos.</p></div>';fb.innerHTML='<button class="filter-btn active" data-filter="all">Todos</button>';return;}
+  const cats=[...new Set(clients.map(c=>c.category))];
+  fb.innerHTML='<button class="filter-btn active" data-filter="all">Todos</button>'+cats.map(c=>`<button class="filter-btn" data-filter="${c}">${c}</button>`).join('');
+  fb.querySelectorAll('.filter-btn').forEach(b=>b.addEventListener('click',()=>{fb.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active'));b.classList.add('active');filterCards(b.dataset.filter);}));
+  grid.innerHTML=clients.map(c=>{const m=c.images&&c.images.length?`<img src="${c.images[0]}" alt="${c.name}" loading="lazy">`:'<div style="font-size:3rem;color:var(--muted)">🖼</div>';const t=(c.tags||'').split(',').filter(Boolean).map(x=>`<span class="card-tag">${x.trim()}</span>`).join('');const l=[c.link1,c.link2].filter(Boolean).map(u=>`<a href="${u}" target="_blank" rel="noopener">🔗 Ver</a>`).join('');return`<div class="client-card reveal" data-category="${c.category}" onclick="openClientModal('${c.id}')"><div class="card-media">${m}<div class="card-overlay"><div class="card-overlay-links">${l}</div></div></div><div class="card-body"><div class="card-category">${c.category}</div><div class="card-title">${c.name}</div><div class="card-desc">${c.description?c.description.substring(0,100)+'...':'Sin descripción.'}</div><div class="card-tags">${t}</div></div></div>`;}).join('');
+  watchReveals();
+}
+function filterCards(cat){document.querySelectorAll('.client-card').forEach(c=>{c.style.display=(cat==='all'||c.dataset.category===cat)?'':'none';});}
+
+function openClientModal(id){
+  const c=getClients().find(x=>x.id===id);if(!c)return;
+  const modal=document.createElement('div');modal.style.cssText='position:fixed;inset:0;z-index:800;background:rgba(0,0,0,0.85);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:center;padding:20px;';
+  const imgs=c.images||[];const gallery=imgs.length?`<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:24px">${imgs.map(i=>`<img src="${i}" style="width:100%;border-radius:10px;object-fit:cover;aspect-ratio:1" loading="lazy">`).join('')}</div>`:'<div style="height:160px;background:var(--blush);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:3rem;margin-top:24px">🖼</div>';
+  const tags=(c.tags||'').split(',').filter(Boolean).map(t=>`<span class="card-tag">${t.trim()}</span>`).join('');
+  const links=[c.link1?`<a href="${c.link1}" target="_blank" class="btn-primary" style="text-decoration:none">🔗 Ver trabajo</a>`:'',c.link2?`<a href="${c.link2}" target="_blank" class="btn-secondary" style="text-decoration:none">🔗 Link 2</a>`:''].join('');
+  modal.innerHTML=`<div style="background:var(--warm-white);border-radius:20px;max-width:680px;width:100%;max-height:90vh;overflow-y:auto;padding:40px;position:relative"><button onclick="this.closest('[style*=fixed]').remove()" style="position:absolute;top:16px;right:16px;background:var(--cream);border:1px solid var(--border);border-radius:50%;width:36px;height:36px;cursor:pointer;font-size:1.1rem">✕</button><span style="font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:500">${c.category}</span><h2 style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;margin:8px 0 12px">${c.name}</h2><p style="color:var(--muted);line-height:1.7">${c.description||'Sin descripción.'}</p>${gallery}<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:20px">${tags}</div><div style="display:flex;gap:12px;margin-top:24px;flex-wrap:wrap">${links}</div></div>`;
+  modal.addEventListener('click',e=>{if(e.target===modal)modal.remove();});document.body.appendChild(modal);
+}
+
+// ── RENDER CONTACT ──
+function renderContact(){
+  const c=getContact();
+  const map=[['email','📧','Email',c.email?`<a href="mailto:${c.email}">${c.email}</a>`:'—'],['phone','📱','Teléfono',c.phone?`<a href="tel:${c.phone.replace(/\s/g,'')}">${c.phone}</a>`:'—'],['city','📍','Ubicación',c.city||'—'],['hours','🕐','Horario',c.hours||'—']];
+  const el=document.getElementById('contactInfoDisplay');if(!el)return;
+  el.innerHTML=map.map(([,,label,val])=>`<div class="contact-item reveal"><div class="contact-icon">${map.find(x=>x[2]===label)[1]}</div><div><div class="contact-detail-label">${label}</div><div class="contact-detail-value">${val}</div></div></div>`).join('');
+  watchReveals();
+  const socials=[{k:'ig',icon:'📸',label:'Instagram'},{k:'tt',icon:'🎵',label:'TikTok'},{k:'li',icon:'💼',label:'LinkedIn'},{k:'wa',icon:'💬',label:'WhatsApp',href:c.wa?`https://wa.me/${c.wa}`:null}];
+  const fs=document.getElementById('footerSocial');if(fs)fs.innerHTML=socials.map(s=>{const href=s.href||c[s.k];if(!href)return'';return`<a href="${href}" target="_blank" rel="noopener" class="social-btn" title="${s.label}">${s.icon}</a>`;}).join('');
+}
+function handleContactForm(e){e.preventDefault();showToast('✉️ Mensaje enviado. ¡Te respondo pronto!');e.target.reset();}
+
+// ── ADMIN AUTH ──
+function openAdmin(){const o=document.getElementById('adminOverlay');o.classList.add('open');document.getElementById('loginUser').value='';document.getElementById('loginPass').value='';document.getElementById('loginError').style.display='none';setTimeout(()=>document.getElementById('loginUser').focus(),100);}
+function closeAdmin(){document.getElementById('adminOverlay').classList.remove('open');}
+function doLogin(){if(document.getElementById('loginUser').value.trim()==='ADMIN'&&document.getElementById('loginPass').value==='Agu%%1010'){closeAdmin();openDashboard();}else{const e=document.getElementById('loginError');e.style.display='block';document.getElementById('loginPass').value='';setTimeout(()=>e.style.display='none',3000);}}
+function openDashboard(){document.getElementById('adminDashboard').classList.add('open');loadHeroForm();loadAboutForm();renderClientsAdmin();loadContactForm();updateStats();}
+function logoutAdmin(){document.getElementById('adminDashboard').classList.remove('open');renderPortfolio();renderAbout();renderContact();showToast('Sesión cerrada correctamente');}
+function showPanel(name){document.querySelectorAll('.admin-panel').forEach(p=>p.classList.remove('active'));document.querySelectorAll('.sidebar-item').forEach(b=>b.classList.remove('active'));const p=document.getElementById(`panel-${name}`);const b=document.querySelector(`[data-panel="${name}"]`);if(p)p.classList.add('active');if(b)b.classList.add('active');if(name==='stats')updateStats();if(name==='clients')renderClientsAdmin();}
+
+// ── HERO FORM ──
+let _heroPending=null; // null=no change, ''=remove, dataURL=new
+
+function loadHeroForm(){
+  const h=getHero();
+  _heroPending=null;
+  document.getElementById('f_heroTag').value=h.heroTag;
+  document.getElementById('f_heroTitle').value=h.heroTitle;
+  document.getElementById('f_heroSubtitle').value=h.heroSubtitle;
+  // photo preview
+  const pi=document.getElementById('adminHeroPreviewImg');
+  const pp=document.getElementById('adminHeroPreviewPh');
+  if(h.heroPhoto){pi.src=h.heroPhoto;pi.style.display='block';pp.style.display='none';}else{pi.style.display='none';pp.style.display='block';}
+  // stats
+  renderStatsRows(h.stats);
+}
+function onHeroPhotoChange(e){
+  const f=e.target.files[0];if(!f)return;
+  const r=new FileReader();r.onload=ev=>{_heroPending=ev.target.result;const pi=document.getElementById('adminHeroPreviewImg');const pp=document.getElementById('adminHeroPreviewPh');pi.src=_heroPending;pi.style.display='block';pp.style.display='none';};r.readAsDataURL(f);
+}
+function clearHeroPhoto(){_heroPending='__clear__';document.getElementById('adminHeroPreviewImg').style.display='none';document.getElementById('adminHeroPreviewPh').style.display='block';}
+
+let _statRows=[];
+function renderStatsRows(stats){
+  _statRows=[...(stats||[])];
+  const el=document.getElementById('statsRows');
+  el.innerHTML=_statRows.map((s,i)=>`<div class="stat-row" id="sr${i}">
+    <div><label class="admin-label">Número</label><input class="admin-input sr-num" data-i="${i}" value="${s.auto?'':s.num}" placeholder="+50k" ${s.auto?'disabled style="opacity:0.4"':''}></div>
+    <div><label class="admin-label">Etiqueta</label><input class="admin-input sr-label" data-i="${i}" value="${s.label}" placeholder="Clientes activos"></div>
+    <div><label class="admin-label">Auto</label><br><label style="display:inline-flex;align-items:center;gap:6px;cursor:pointer;margin-top:10px;font-size:0.82rem;color:var(--muted)"><input type="checkbox" class="sr-auto" data-i="${i}" ${s.auto?'checked':''} onchange="toggleAuto(${i},this)"> Clientes</label></div>
+    <div><label class="admin-label">&nbsp;</label><br><button type="button" onclick="removeStat(${i})" class="admin-btn admin-btn-danger" style="padding:8px 12px;margin-top:10px">✕</button></div>
+  </div>`).join('');
+}
+function toggleAuto(i,cb){const inp=document.querySelector(`.sr-num[data-i="${i}"]`);inp.disabled=cb.checked;inp.style.opacity=cb.checked?'0.4':'1';if(cb.checked)inp.value='';}
+function addStatRow(){_statRows.push({num:'',label:'Nueva estadística',auto:false});renderStatsRows(_statRows);}
+function removeStat(i){_statRows.splice(i,1);renderStatsRows(_statRows);}
+function collectStats(){
+  return _statRows.map((_,i)=>({num:document.querySelector(`.sr-num[data-i="${i}"]`).value,label:document.querySelector(`.sr-label[data-i="${i}"]`).value,auto:document.querySelector(`.sr-auto[data-i="${i}"]`).checked}));
+}
+function saveHero(e){
+  e.preventDefault();
+  const h=getHero();
+  h.heroTag=document.getElementById('f_heroTag').value.trim();
+  h.heroTitle=document.getElementById('f_heroTitle').value.trim();
+  h.heroSubtitle=document.getElementById('f_heroSubtitle').value.trim();
+  h.stats=collectStats();
+  if(_heroPending==='__clear__')h.heroPhoto='';
+  else if(_heroPending)h.heroPhoto=_heroPending;
+  DB.set('hp_hero',h);_heroPending=null;
+  renderHero();showToast('✅ Página de Inicio actualizada');
+}
+
+// ── ABOUT FORM ──
+let _aboutPending=null;
+let _skills=[];
+
+function loadAboutForm(){
+  const a=getAboutData();
+  _aboutPending=null;
+  document.getElementById('f_aboutTitle').value=a.title;
+  document.getElementById('f_aboutBio').value=a.bio;
+  document.getElementById('f_aboutYears').value=a.years;
+  document.getElementById('f_aboutYearsLabel').value=a.yearsLabel;
+  _skills=[...(a.skills||[])];
+  const pi=document.getElementById('adminAboutPreviewImg');
+  const pp=document.getElementById('adminAboutPreviewPh');
+  if(a.photo){pi.src=a.photo;pi.style.display='block';pp.style.display='none';}else{pi.style.display='none';pp.style.display='block';}
+  renderSkillsEditor();
+}
+function onAboutPhotoChange(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>{_aboutPending=ev.target.result;const pi=document.getElementById('adminAboutPreviewImg');pi.src=_aboutPending;pi.style.display='block';document.getElementById('adminAboutPreviewPh').style.display='none';};r.readAsDataURL(f);}
+function clearAboutPhoto(){_aboutPending='__clear__';document.getElementById('adminAboutPreviewImg').style.display='none';document.getElementById('adminAboutPreviewPh').style.display='block';}
+function renderSkillsEditor(){document.getElementById('skillsEditor').innerHTML=_skills.map((s,i)=>`<span class="skill-edit-tag">${s}<button type="button" onclick="_skills.splice(${i},1);renderSkillsEditor()">✕</button></span>`).join('');}
+function addSkill(){const inp=document.getElementById('newSkillInput');const v=inp.value.trim();if(!v)return;_skills.push(v);inp.value='';renderSkillsEditor();}
+function saveAbout(e){
+  e.preventDefault();
+  const a=getAboutData();
+  a.title=document.getElementById('f_aboutTitle').value.trim();
+  a.bio=document.getElementById('f_aboutBio').value.trim();
+  a.years=document.getElementById('f_aboutYears').value.trim();
+  a.yearsLabel=document.getElementById('f_aboutYearsLabel').value.trim();
+  a.skills=[..._skills];
+  if(_aboutPending==='__clear__')a.photo='';
+  else if(_aboutPending)a.photo=_aboutPending;
+  DB.set('hp_about',a);_aboutPending=null;
+  renderAbout();showToast('✅ Sección "Sobre mí" actualizada');
+}
+
+// ── CLIENTS ──
+let _newImgs=[]; let _existImgs=[];
+function previewClientImages(e){const files=Array.from(e.target.files);_newImgs=[];const grid=document.getElementById('imgPreviewGrid');grid.innerHTML='';files.forEach((f,i)=>{const r=new FileReader();r.onload=ev=>{_newImgs.push(ev.target.result);const d=document.createElement('div');d.className='img-preview';d.innerHTML=`<img src="${ev.target.result}"><button class="img-preview-del" onclick="_newImgs.splice(${i},1);this.parentNode.remove()">✕</button>`;grid.appendChild(d);};r.readAsDataURL(f);});}
+function saveClient(e){
+  e.preventDefault();
+  const eid=document.getElementById('editClientId').value;
+  const clients=getClients();
+  const nc={id:eid||Date.now().toString(),name:document.getElementById('clientName').value.trim(),category:document.getElementById('clientCategory').value,description:document.getElementById('clientDesc').value.trim(),link1:document.getElementById('clientLink1').value.trim(),link2:document.getElementById('clientLink2').value.trim(),tags:document.getElementById('clientTags').value.trim(),color:document.getElementById('clientColor').value,images:[..._existImgs,..._newImgs],updatedAt:new Date().toISOString()};
+  if(eid){const idx=clients.findIndex(c=>c.id===eid);idx>=0?clients[idx]=nc:clients.push(nc);}else clients.push(nc);
+  DB.set('mcag_clients',clients);resetClientForm();showPanel('clients');renderClientsAdmin();renderPortfolio();updateStats();showToast('✅ Cliente guardado correctamente');
+}
+function resetClientForm(){['editClientId','clientName','clientDesc','clientLink1','clientLink2','clientTags'].forEach(id=>document.getElementById(id).value='');document.getElementById('clientColor').value='#C9A84C';document.getElementById('imgPreviewGrid').innerHTML='';document.getElementById('clientImages').value='';document.getElementById('addClientTitle').textContent='Agregar Cliente';_newImgs=[];_existImgs=[];}
+function editClient(id){
+  const c=getClients().find(x=>x.id===id);if(!c)return;
+  showPanel('addClient');document.getElementById('addClientTitle').textContent='Editar Cliente';
+  document.getElementById('editClientId').value=c.id;document.getElementById('clientName').value=c.name;document.getElementById('clientCategory').value=c.category;document.getElementById('clientDesc').value=c.description||'';document.getElementById('clientLink1').value=c.link1||'';document.getElementById('clientLink2').value=c.link2||'';document.getElementById('clientTags').value=c.tags||'';document.getElementById('clientColor').value=c.color||'#C9A84C';
+  _existImgs=c.images||[];_newImgs=[];
+  document.getElementById('imgPreviewGrid').innerHTML=_existImgs.map((img,i)=>`<div class="img-preview"><img src="${img}"><button class="img-preview-del" onclick="_existImgs.splice(${i},1);this.parentNode.remove()">✕</button></div>`).join('');
+}
+function deleteClient(id){if(!confirm('¿Seguro que querés eliminar este cliente?'))return;DB.set('mcag_clients',getClients().filter(c=>c.id!==id));renderClientsAdmin();renderPortfolio();updateStats();showToast('🗑 Cliente eliminado',true);}
+function renderClientsAdmin(){
+  const clients=getClients();const el=document.getElementById('clientsAdminList');if(!el)return;
+  if(!clients.length){el.innerHTML=`<p style="color:var(--muted)">No hay clientes todavía. <button class="admin-btn admin-btn-ghost" onclick="showPanel('addClient')" style="margin-left:8px">Agregar el primero →</button></p>`;return;}
+  el.innerHTML=clients.map(c=>`<div class="client-admin-item"><div class="client-admin-thumb" style="background:${c.color||'var(--gold)'}22">${c.images&&c.images[0]?`<img src="${c.images[0]}">`:'🖼'}</div><div class="client-admin-info"><div class="client-admin-name">${c.name}</div><div class="client-admin-meta">${c.category} · ${c.images?c.images.length:0} imágenes</div></div><div class="client-admin-actions"><button class="admin-btn admin-btn-ghost" onclick="editClient('${c.id}')">✏️ Editar</button><button class="admin-btn admin-btn-danger" onclick="deleteClient('${c.id}')">🗑</button></div></div>`).join('');
+}
+
+// ── CONTACT FORM ──
+function loadContactForm(){const c=getContact();const map={contactEmail:'email',contactPhone:'phone',contactCity:'city',contactHours:'hours',socialIG:'ig',socialTT:'tt',socialLI:'li',socialWA:'wa'};Object.entries(map).forEach(([id,k])=>{const el=document.getElementById(id);if(el)el.value=c[k]||'';});}
+function saveContact(e){e.preventDefault();DB.set('mcag_contact',{email:document.getElementById('contactEmail').value.trim(),phone:document.getElementById('contactPhone').value.trim(),city:document.getElementById('contactCity').value.trim(),hours:document.getElementById('contactHours').value.trim(),ig:document.getElementById('socialIG').value.trim(),tt:document.getElementById('socialTT').value.trim(),li:document.getElementById('socialLI').value.trim(),wa:document.getElementById('socialWA').value.trim()});renderContact();showToast('✅ Información de contacto actualizada');}
+
+// ── STATS ──
+function updateStats(){const c=getClients();document.getElementById('statTotalClients').textContent=c.length;document.getElementById('statTotalImgs').textContent=c.reduce((a,x)=>a+(x.images?x.images.length:0),0);document.getElementById('statCategories').textContent=new Set(c.map(x=>x.category)).size;}
+function clearAllData(){if(!confirm('⚠️ ¿Borrar TODOS los datos? Esto incluye fotos, textos y clientes.'))return;['hp_hero','hp_about','mcag_clients','mcag_contact'].forEach(k=>DB.del(k));renderHero();renderAbout();renderClientsAdmin();updateStats();showToast('🗑 Todos los datos eliminados',true);}
+
+// ── TOAST ──
+function showToast(msg,err=false){const t=document.getElementById('toast');t.textContent=msg;t.className=`toast show${err?' error':''}`;clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),3500);}
+
+// ── INIT ──
+document.addEventListener('DOMContentLoaded',()=>{renderHero();renderAbout();renderPortfolio();renderContact();watchReveals();});
+</script>
+</body>
+</html>
