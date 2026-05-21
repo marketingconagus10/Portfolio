@@ -1,0 +1,82 @@
+{
+  "_meta": {
+    "exportedAt": "2026-05-21T22:46:46.612Z",
+    "version": 1,
+    "note": "Subí este archivo como data.json al lado del index.html en tu repo de GitHub."
+  },
+  "hero": {
+    "heroPhoto": "",
+    "heroTag": "Community Manager · Estratega Digital",
+    "heroTitle": "Crecé en\nredes con [em]estilo[/em]",
+    "heroSubtitle": "Transformo marcas en comunidades. Estrategia, contenido y gestión de redes sociales que conectan de verdad con tu audiencia.",
+    "stats": [
+      {
+        "num": "",
+        "label": "Clientes activos",
+        "auto": true
+      },
+      {
+        "num": "+50k",
+        "label": "Seguidores generados",
+        "auto": false
+      },
+      {
+        "num": "98%",
+        "label": "Satisfacción",
+        "auto": false
+      }
+    ]
+  },
+  "about": {
+    "photo": "",
+    "title": "Soy Agus, tu [em]aliada[/em] digital",
+    "bio": "Me especializo en convertir negocios comunes en marcas memorables a través de estrategias de contenido auténticas y gestión de comunidades que generan resultados reales.",
+    "years": "3+",
+    "yearsLabel": "años en juego",
+    "skills": [
+      "Instagram",
+      "TikTok",
+      "Facebook Ads",
+      "Estrategia de contenido",
+      "Diseño Canva",
+      "Copywriting",
+      "Análisis de métricas",
+      "Reels & Stories",
+      "Email Marketing"
+    ]
+  },
+  "clients": [
+    {
+      "id": "1779403597864",
+      "name": "Frascos",
+      "category": "Moda & Lifestyle",
+      "description": "",
+      "web": "http://www.google.com",
+      "ig": "",
+      "fb": "",
+      "tt": "",
+      "videos": [],
+      "tags": "",
+      "color": "#ff5236",
+      "folder": "FrascosyEnvases",
+      "logo": "LOGO.jpeg",
+      "gallery": [
+        "4.jpg",
+        "3.jpg",
+        "2.jpg",
+        "1.jpg"
+      ],
+      "updatedAt": "2026-05-21T22:46:37.864Z"
+    }
+  ],
+  "contact": {
+    "email": "agus@marketingconagus.com",
+    "phone": "+54 9 381 000 0000",
+    "city": "Santiago del Estero, Argentina",
+    "hours": "Lun–Vie, 9–18hs",
+    "ig": "",
+    "tt": "",
+    "li": "",
+    "wa": ""
+  }
+}
