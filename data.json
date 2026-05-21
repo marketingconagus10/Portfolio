@@ -1,0 +1,142 @@
+{
+  "_meta": {
+    "exportedAt": "2026-05-20T20:33:19.419Z",
+    "version": 1,
+    "note": "Subí este archivo como data.json al lado del index.html en tu repo de GitHub."
+  },
+  "hero": {
+    "heroPhoto": "",
+    "heroTag": "Community Manager · Estratega Digital",
+    "heroTitle": "Crecé en\nredes con [em]estilo[/em]",
+    "heroSubtitle": "Transformo marcas en comunidades. Estrategia, contenido y gestión de redes sociales que conectan de verdad con tu audiencia.",
+    "stats": [
+      {
+        "num": "",
+        "label": "Clientes activos",
+        "auto": true
+      },
+      {
+        "num": "+50k",
+        "label": "Seguidores generados",
+        "auto": false
+      },
+      {
+        "num": "98%",
+        "label": "Satisfacción",
+        "auto": false
+      }
+    ]
+  },
+  "about": {
+    "photo": "",
+    "title": "Soy Agus, tu [em]aliada[/em] digital",
+    "bio": "Me especializo en convertir negocios comunes en marcas memorables a través de estrategias de contenido auténticas y gestión de comunidades que generan resultados reales.",
+    "years": "3+",
+    "yearsLabel": "años en juego",
+    "skills": [
+      "Instagram",
+      "TikTok",
+      "Facebook Ads",
+      "Estrategia de contenido",
+      "Diseño Canva",
+      "Copywriting",
+      "Análisis de métricas",
+      "Reels & Stories",
+      "Email Marketing"
+    ]
+  },
+  "clients": [
+    {
+      "id": "1779309104238",
+      "name": "Frascos",
+      "category": "Moda & Lifestyle",
+      "description": "",
+      "link1": "http://www.google.com",
+      "link2": "",
+      "tags": "",
+      "color": "#387aff",
+      "folder": "FrascosyEnvases",
+      "logo": "LOGO.jpeg",
+      "gallery": [
+        "4.jpg",
+        "3.jpg",
+        "2.jpg",
+        "1.jpg"
+      ],
+      "updatedAt": "2026-05-20T20:31:44.238Z"
+    },
+    {
+      "id": "1779309134600",
+      "name": "GyM",
+      "category": "Moda & Lifestyle",
+      "description": "",
+      "link1": "http://www.google.com",
+      "link2": "",
+      "tags": "",
+      "color": "#eee711",
+      "folder": "Crown",
+      "logo": "CROWN LOGO.jpeg",
+      "gallery": [
+        "gym1.jpeg",
+        "gym2.jpeg",
+        "gym3.jpeg",
+        "gym4.jpeg",
+        "gym5.jpeg",
+        "gym6.jpeg",
+        "gym7.jpeg"
+      ],
+      "updatedAt": "2026-05-20T20:32:14.600Z"
+    },
+    {
+      "id": "1779309172448",
+      "name": "Agencia Viajes",
+      "category": "Moda & Lifestyle",
+      "description": "",
+      "link1": "http://www.google.com",
+      "link2": "",
+      "tags": "",
+      "color": "#109372",
+      "folder": "GranTurismo",
+      "logo": "GTURISMO LOGO.jpeg",
+      "gallery": [
+        "WhatsApp Image 2026-05-18 at 16.28.03 (1).jpeg",
+        "WhatsApp Image 2026-05-18 at 16.28.03.jpeg",
+        "WhatsApp Image 2026-05-18 at 16.28.04 (1).jpeg",
+        "WhatsApp Image 2026-05-18 at 16.28.04 (2).jpeg",
+        "WhatsApp Image 2026-05-18 at 16.28.04.jpeg",
+        "WhatsApp Image 2026-05-18 at 16.28.15.jpeg"
+      ],
+      "updatedAt": "2026-05-20T20:32:52.448Z"
+    },
+    {
+      "id": "1779309191502",
+      "name": "Valussa",
+      "category": "Moda & Lifestyle",
+      "description": "",
+      "link1": "",
+      "link2": "",
+      "tags": "",
+      "color": "#ff5236",
+      "folder": "Valussa",
+      "logo": "VALUSSSA LOGO.jpeg",
+      "gallery": [
+        "val1.jpeg",
+        "val2.jpeg",
+        "val3.jpeg",
+        "val4.jpeg",
+        "val5.jpeg"
+      ],
+      "updatedAt": "2026-05-20T20:33:11.502Z"
+    }
+  ],
+  "contact": {
+    "email": "agus@marketingconagus.com",
+    "phone": "+54 9 381 000 0000",
+    "city": "Santiago del Estero, Argentina",
+    "hours": "Lun–Vie, 9–18hs",
+    "ig": "",
+    "tt": "",
+    "li": "",
+    "wa": ""
+  }
+}
