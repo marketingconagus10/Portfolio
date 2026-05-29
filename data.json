@@ -1,0 +1,278 @@
+{
+  "_meta": {
+    "exportedAt": "2026-05-25T00:57:32.156170Z",
+    "version": 1,
+    "note": "Subí este archivo como data.json al lado del index.html en tu repo de GitHub."
+  },
+  "hero": {
+    "heroPhoto": "./img/1.jpg",
+    "heroTag": "Community Manager",
+    "heroTitle": "COMMUNITY MANAGER & CREADORA DE [em]CONTENIDO[/em]",
+    "heroSubtitle": "Ayudo a marcas y emprendedores a comunicar mejor en redes",
+    "stats": [
+      {
+        "num": "",
+        "label": "Clientes activos",
+        "auto": true
+      },
+      {
+        "num": "+50k",
+        "label": "Seguidores generados",
+        "auto": false
+      },
+      {
+        "num": "98%",
+        "label": "Satisfacción",
+        "auto": false
+      }
+    ]
+  },
+  "about": {
+    "photo": "./img/2.jpg",
+    "title": "Soy Agus, tu [em]aliada[/em] digital",
+    "bio": "Me especializo en crear contenido y gestionar redes. Fuera del trabajo, soy fan de los animales, tengo una gatito, me gusta el rock, entrenar y cocinar.",
+    "years": "5+",
+    "yearsLabel": "años en juego",
+    "skills": [
+      "Instagram",
+      "TikTok",
+      "Creación de contenido",
+      "Planificación",
+      "Edición de contenido"
+    ]
+  },
+  "clients": [
+    {
+      "id": "1779403597864",
+      "name": "Frascos & Envases",
+      "category": "Otro",
+      "description": "Contenido pensado para mostrar productos de forma simple, visual y cercana, combinando información útil con una comunicación más dinámica y relajada.",
+      "web": "http://www.google.com",
+      "ig": "",
+      "fb": "",
+      "tt": "",
+      "videos": [
+        "https://www.instagram.com/p/DXW8C5mjl8i/",
+        "https://www.instagram.com/p/DYH3mCsOV2N/",
+        "https://www.instagram.com/p/DXAcEdCiSLv/"
+      ],
+      "tags": "",
+      "color": "#02c4de",
+      "folder": "FrascosyEnvases",
+      "logo": "LOGO.jpeg",
+      "gallery": [
+        "4.jpg",
+        "3.jpg",
+        "2.jpg",
+        "1.jpg"
+      ],
+      "updatedAt": "2026-05-25T00:12:56.049Z"
+    },
+    {
+      "id": "1779404387942",
+      "name": "Crown",
+      "category": "Salud & Bienestar",
+      "description": "Contenido orientado a motivar, generar comunidad y mostrar el entrenamiento como parte de un estilo de vida constante y saludable.",
+      "web": "http://www.google.com",
+      "ig": "",
+      "fb": "",
+      "tt": "",
+      "videos": [
+        "https://www.instagram.com/p/DXen78ojFs1/",
+        "https://www.instagram.com/p/DYUw90Khjfj/",
+        "https://www.instagram.com/p/DYCtDssSeeY/"
+      ],
+      "tags": "",
+      "color": "#daf415",
+      "folder": "Crown",
+      "logo": "CROWN LOGO.jpeg",
+      "gallery": [
+        "gym1.jpeg",
+        "gym2.jpeg",
+        "gym3.jpeg",
+        "gym4.jpeg",
+        "gym5.jpeg",
+        "gym6.jpeg",
+        "gym7.jpeg"
+      ],
+      "updatedAt": "2026-05-25T00:24:00.661Z"
+    },
+    {
+      "id": "1779414315148",
+      "name": "Grand Turismo",
+      "category": "Otro",
+      "description": "Estrategias enfocadas en inspirar viajes y convertir destinos en experiencias aspiracionales mediante contenido visual y emocional.",
+      "web": "http://www.google.com",
+      "ig": "",
+      "fb": "",
+      "tt": "",
+      "videos": [
+        "https://www.instagram.com/p/DXwyLnINjCi/",
+        "https://www.instagram.com/p/DYUtiXHBxOc/",
+        "https://www.instagram.com/p/DYAG6G-N1kc/"
+      ],
+      "tags": "",
+      "color": "#ad6500",
+      "folder": "GranTurismo",
+      "logo": "GTURISMO LOGO.jpeg",
+      "gallery": [
+        "WhatsApp Image 2026-05-18 at 16.28.03 (1).jpeg",
+        "WhatsApp Image 2026-05-18 at 16.28.03.jpeg",
+        "WhatsApp Image 2026-05-18 at 16.28.04 (1).jpeg",
+        "WhatsApp Image 2026-05-18 at 16.28.04 (2).jpeg",
+        "WhatsApp Image 2026-05-18 at 16.28.15.jpeg",
+        "WhatsApp Image 2026-05-18 at 16.28.04.jpeg"
+      ],
+      "updatedAt": "2026-05-25T00:24:49.872Z"
+    },
+    {
+      "id": "1779414351683",
+      "name": "Valussa",
+      "category": "Gastronomía",
+      "description": "Contenido pensado para transmitir cercanía, estética y experiencia de marca, reforzando la identidad visual del local y la conexión con sus clientes.",
+      "web": "http://www.google.com",
+      "ig": "",
+      "fb": "",
+      "tt": "",
+      "videos": [
+        "https://www.instagram.com/p/DX1w9iII38v/",
+        "https://www.instagram.com/p/DXKDe6jFnFO/?img_index=1",
+        "https://www.instagram.com/p/DYCyp0No0YC/"
+      ],
+      "tags": "",
+      "color": "#1bdacd",
+      "folder": "Valussa",
+      "logo": "VALUSSSA LOGO.jpeg",
+      "gallery": [
+        "val1.jpeg",
+        "val2.jpeg",
+        "val3.jpeg",
+        "val4.jpeg",
+        "val5.jpeg"
+      ],
+      "updatedAt": "2026-05-25T00:25:21.201Z"
+    },
+    {
+      "id": "1779500000001",
+      "name": "Andrea Mollica",
+      "category": "Salud & Bienestar",
+      "description": "Contenido enfocado en educar, generar confianza y comunicar tratamientos estéticos de forma cercana, profesional y natural.",
+      "web": "",
+      "ig": "",
+      "fb": "",
+      "tt": "",
+      "videos": [
+        "https://www.instagram.com/p/DVbTWFyDhbW/",
+        "https://www.instagram.com/p/DWT9o7djm5O/",
+        "https://www.instagram.com/p/DX7BJt5S5Z9/"
+      ],
+      "tags": "",
+      "color": "#a78bfa",
+      "folder": "AndreaMollica",
+      "logo": "LOGO.jpeg",
+      "gallery": [
+        "WhatsApp Image 2026-05-18 at 16.29.33.jpeg",
+        "WhatsApp Image 2026-05-18 at 16.29.34.jpeg",
+        "WhatsApp Image 2026-05-18 at 16.29.34 (1).jpeg",
+        "WhatsApp Image 2026-05-18 at 16.29.34 (2).jpeg",
+        "WhatsApp Image 2026-05-18 at 16.29.34 (3).jpeg",
+        "WhatsApp Image 2026-05-18 at 16.52.17.jpeg"
+      ],
+      "updatedAt": "2026-05-25T00:57:32.156170Z"
+    },
+    {
+      "id": "1779500000002",
+      "name": "White And Go",
+      "category": "Salud & Bienestar",
+      "description": "Estrategias centradas en generar confianza, derribar mitos y comunicar resultados de forma simple, moderna y profesional.",
+      "web": "",
+      "ig": "",
+      "fb": "",
+      "tt": "",
+      "videos": [
+        "https://www.instagram.com/p/DYXN-c5RU79/",
+        "https://www.instagram.com/p/DYfDUt8lB2h/"
+      ],
+      "tags": "",
+      "color": "#f59e0b",
+      "folder": "White",
+      "logo": "LOGO.jpeg",
+      "gallery": [
+        "WhatsApp Image 2026-05-18 at 16.33.03.jpeg",
+        "WhatsApp Image 2026-05-18 at 16.33.03 (1).jpeg",
+        "WhatsApp Image 2026-05-18 at 16.33.03 (2).jpeg",
+        "WhatsApp Image 2026-05-18 at 16.33.03 (3).jpeg",
+        "WhatsApp Image 2026-05-18 at 16.33.04.jpeg",
+        "WhatsApp Image 2026-05-18 at 16.33.04 (1).jpeg",
+        "WhatsApp Image 2026-05-18 at 16.33.57.jpeg"
+      ],
+      "updatedAt": "2026-05-25T00:57:32.156170Z"
+    },
+    {
+      "id": "1779500000003",
+      "name": "Dra. Florencia Mansilla",
+      "category": "Moda & Lifestyle",
+      "description": "Contenido pensado para reforzar autoridad profesional, informar procedimientos y comunicar estética desde un enfoque natural y cuidado.",
+      "web": "",
+      "ig": "",
+      "fb": "",
+      "tt": "",
+      "videos": [
+        "https://www.instagram.com/p/DVMg2RgEnXI/",
+        "https://www.instagram.com/p/DYfA0lRuvFF/",
+        "https://www.instagram.com/p/DUBOmS4jv3g/"
+      ],
+      "tags": "",
+      "color": "#ec4899",
+      "folder": "FlorenciaM",
+      "logo": "Logo.jpeg",
+      "gallery": [
+        "WhatsApp Image 2026-05-18 at 16.23.22.jpeg",
+        "WhatsApp Image 2026-05-18 at 16.23.23.jpeg",
+        "WhatsApp Image 2026-05-18 at 16.23.23 (1).jpeg",
+        "WhatsApp Image 2026-05-18 at 16.23.57.jpeg",
+        "WhatsApp Image 2026-05-18 at 16.23.57 (1).jpeg",
+        "WhatsApp Image 2026-05-18 at 16.23.57 (2).jpeg",
+        "WhatsApp Image 2026-05-18 at 16.23.58.jpeg",
+        "WhatsApp Image 2026-05-18 at 16.23.59.jpeg"
+      ],
+      "updatedAt": "2026-05-25T00:57:32.156170Z"
+    },
+    {
+      "id": "1779500000004",
+      "name": "Santa Barbara",
+      "category": "Moda & Lifestyle",
+      "description": "Comunicación visual orientada a transmitir tranquilidad, exclusividad y estilo de vida a través de contenido aspiracional.",
+      "web": "",
+      "ig": "",
+      "fb": "",
+      "tt": "",
+      "videos": [
+        "https://www.instagram.com/p/DV9la1qEX8b/",
+        "https://www.instagram.com/p/DXwrZMBRaYf/",
+        "https://www.instagram.com/p/DWl-uBMEdVJ/"
+      ],
+      "tags": "",
+      "color": "#10b981",
+      "folder": "SantaBarbara",
+      "logo": "LOGO.jpeg",
+      "gallery": [
+        "WhatsApp Image 2026-05-18 at 17.02.49.jpeg",
+        "WhatsApp Image 2026-05-18 at 17.02.49 (1).jpeg",
+        "WhatsApp Image 2026-05-18 at 17.02.49 (2).jpeg",
+        "WhatsApp Image 2026-05-18 at 17.02.49 (3).jpeg"
+      ],
+      "updatedAt": "2026-05-25T00:57:32.156170Z"
+    }
+  ],
+  "contact": {
+    "email": "sarmiento.agu@hotmail.com",
+    "phone": "",
+    "city": "Santiago del Estero, Argentina",
+    "hours": "Lun–Vie, 9–18hs",
+    "ig": "",
+    "tt": "",
+    "li": "",
+    "wa": ""
+  }
+}
